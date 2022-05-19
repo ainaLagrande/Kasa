@@ -1,0 +1,475 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #FF6060;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+html {
+  width: 1260px;
+  margin: auto;
+}
+
+.nav_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nav_container .nav_box {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+.nav_container .navbar {
+  width: 20%;
+}
+.nav_container .navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_container .navbar li {
+  color: #FF6060;
+  font-weight: 500;
+  list-style-type: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav_container .navbar li .active {
+  border-bottom: 1px solid #FF6060;
+}
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+}
+.banner h1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 2.6em;
+  font-weight: 500;
+  color: #FFF;
+  z-index: 2;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner .darken-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.apartments_container {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.apartments_container .apartments_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 90%;
+}
+.apartments_container .apartments_item {
+  width: 30%;
+  height: 440px;
+  margin-top: 5%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.apartments_container .apartments_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.apartments_container .apartments_item h3 {
+  font-size: 26px;
+  font-weight: 500;
+  height: auto;
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  position: absolute;
+  margin-top: -7.5%;
+  margin-left: 2%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 25vh;
+  margin-top: 10%;
+}
+footer .footer_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+footer .footer_item {
+  line-height: 2.5em;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+footer .footer_item h3 {
+  color: white;
+}
+
+.dropDown_container {
+  width: 100%;
+}
+.dropDown_container .dropDown_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropDown_container .dropDown_item {
+  width: 90%;
+  height: 50%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+.dropDown_container .dropDown_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+}
+.dropDown_container .arrow {
+  transform: rotate(0deg);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.dropDown_container .arrow-expanded {
+  transform: rotate(180deg);
+}
+.dropDown_container .title {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.dropDown_container .content {
+  transition: 0.3s;
+  transform: translateY(0);
+}
+.dropDown_container .content.content-expanded {
+  background: #F6F6F6;
+  padding: 16px;
+  transform: translateY(0);
+  flex-direction: column;
+  line-height: 25px;
+}
+.dropDown_container .content.content-expanded p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FF6060;
+  height: auto;
+}
+.dropDown_container .content-hidden {
+  display: none;
+  transform: translateY(-100%);
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  position: relative;
+}
+.carrousel .carrousel__image {
+  height: 415px;
+  width: 1240px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.carrousel .chevron {
+  cursor: pointer;
+  position: absolute;
+}
+.carrousel .carrousel__chevronLeft {
+  left: 5%;
+}
+.carrousel .carrousel__chevronRight {
+  right: 5%;
+}
+.carrousel .carrousel__index {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  bottom: 5%;
+}
+
+.informations {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3em;
+  margin: auto;
+  margin-top: 5%;
+}
+.informations .title {
+  font-size: 36px;
+}
+.informations h3 {
+  font-size: 18px;
+}
+.informations .tags_box {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 3%;
+}
+.informations .tags_box .tag {
+  width: auto;
+  background-color: #FF6060;
+  padding: 0% 4% 0% 4%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.informations .tags_box .tag .tag__name {
+  color: white;
+}
+.informations .rating .rating_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.informations .rating .rating_item p {
+  font-size: 20px;
+}
+.informations .rating .rating_item img {
+  width: 30%;
+  border-radius: 50%;
+}
+.informations .rating .infos__rate {
+  width: 100%;
+  margin-top: 15%;
+  display: flex;
+}
+.informations .rating .infos__rate img {
+  width: 100%;
+}
+
+.appartements_dropDown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+.appartements_dropDown .dropDown_container {
+  height: 50vh;
+  margin-top: 5%;
+}
+.appartements_dropDown .dropDown_box {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appartements_dropDown .dropDown_item {
+  width: 80%;
+  height: 40%;
+}
+.appartements_dropDown ul li {
+  list-style-type: none;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.Error {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.Error h1 {
+  font-size: 288px;
+  font-weight: 700;
+}
+.Error p {
+  font-size: 36px;
+  font-weight: 500;
+}
+.Error a {
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  border-bottom: 1px solid #FF6060;
+}
+
+@media (max-width: 768px) {
+  *, html {
+    overflow-x: hidden;
+  }
+
+  html {
+    max-width: 768px;
+  }
+
+  .nav_container .navbar {
+    width: 40%;
+  }
+  .nav_container .navbar ul {
+    align-items: center;
+    height: 100%;
+  }
+
+  .banner h1 {
+    width: 55%;
+    margin-left: 5%;
+  }
+
+  .apartments_container .apartments_item {
+    width: 100%;
+    overflow-y: hidden;
+  }
+  .apartments_container .apartments_item img {
+    width: 100%;
+    height: 100%;
+  }
+  .apartments_container .apartments_item h3 {
+    width: 90%;
+    margin-top: -20%;
+    margin-left: 5%;
+  }
+
+  .About {
+    padding-bottom: 60vh;
+  }
+
+  .dropDown_container {
+    width: 100%;
+  }
+  .dropDown_container .dropDown_item {
+    width: 90%;
+  }
+  .dropDown_container .content.content-expanded {
+    padding: 50px;
+  }
+  .dropDown_container .content.content-expanded p {
+    overflow: hidden;
+  }
+
+  .informations {
+    width: 90%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .informations h3 {
+    font-size: 26px;
+  }
+  .informations .tags_box {
+    width: 100%;
+  }
+  .informations .tags_box .tag .tag__name {
+    font-size: 22px;
+  }
+  .informations .rating {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  .informations .rating .rating_item {
+    width: 50%;
+  }
+  .informations .rating .rating_item p {
+    width: 100%;
+    font-size: 26px;
+  }
+  .informations .rating .rating_item img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .informations .rating .infos__rate {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+  }
+  .informations .rating .infos__rate img {
+    width: 10%;
+  }
+
+  .appartements_dropDown {
+    flex-direction: column;
+  }
+  .appartements_dropDown .dropDown_container {
+    height: auto;
+  }
+  .appartements_dropDown .dropDown_box {
+    overflow-y: hidden;
+  }
+  .appartements_dropDown .dropDown_item {
+    width: 90%;
+  }
+  .appartements_dropDown .dropDown_item p {
+    overflow-y: hidden;
+  }
+
+  .Error {
+    height: 145vh;
+  }
+  .Error a {
+    width: 70%;
+    top: 130%;
+    left: 60%;
+  }
+}
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */

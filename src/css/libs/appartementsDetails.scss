@@ -1,0 +1,125 @@
+.carrousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    position: relative;
+
+    .carrousel__image{
+        height: 415px;
+        width: 1240px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .chevron{
+        cursor: pointer;
+        position: absolute;
+    }
+    .carrousel__chevronLeft{
+        left: 5%;
+    }
+    .carrousel__chevronRight{
+        right: 5%;
+    }
+    .carrousel__index{
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        bottom: 5%;
+    }
+}
+.informations{
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3em;
+    margin: auto;
+    margin-top: 5%;
+
+    .title{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .tags_box{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin-top: 3%;
+        .tag{
+            width: auto;
+            background-color: $pink;
+            padding: 0% 4% 0% 4%;
+            border-radius:10px;
+            cursor: pointer;
+
+            .tag__name{
+                color: white;
+            }
+        }
+    }
+    .rating{
+        .rating_item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p{
+                font-size: 20px;
+            }
+
+            img{
+                width: 30%;
+                border-radius: 50%;
+            }
+        }
+        .infos__rate{
+            width: 100%;
+            margin-top: 15%;
+            display: flex;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
+}
+.appartements_dropDown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+
+    .dropDown_container{
+        height: 50vh;
+        margin-top: 5%;
+    }
+    .dropDown_box{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dropDown_item{
+        width: 80%;
+        height: 40%;
+    }
+    ul{
+        li{
+            list-style-type: none;
+            font-size: 24px;
+            line-height: 1.5em;
+        }
+    }
+}

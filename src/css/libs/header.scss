@@ -1,0 +1,31 @@
+.nav_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .nav_box{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+    }
+    .navbar{
+        width: 20%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            color: $pink;
+            font-weight: 500;
+            list-style-type: none;
+            font-size: 24px;
+            cursor: pointer;
+
+            .active{
+                border-bottom: 1px solid $pink;
+            }
+
+        }
+    }
+}
